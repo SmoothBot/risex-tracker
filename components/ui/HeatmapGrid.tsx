@@ -6,7 +6,7 @@ function cell(b: number): string {
   const a = Math.min(1, Math.abs(b));
   return b >= 0
     ? `rgba(46,211,183,${(0.06 + a * 0.82).toFixed(2)})`
-    : `rgba(251,44,54,${(0.06 + a * 0.82).toFixed(2)})`;
+    : `rgba(255,100,103,${(0.06 + a * 0.82).toFixed(2)})`;
 }
 
 /** Market × cohort net-long matrix. Ported from the design mockup's heatmap. */

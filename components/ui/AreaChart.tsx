@@ -204,7 +204,7 @@ export function AreaChart({
 
   const vals = pts.map((p) => p.v);
   const up = vals[vals.length - 1] >= vals[0];
-  const c = up ? "#2ED3B7" : "#FB2C36";
+  const c = up ? "#2ED3B7" : "#ff6467";
   const axisY = ht - pb;
 
   const pathOf = (arr: TimePoint[]) => {

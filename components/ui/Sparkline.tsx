@@ -16,7 +16,7 @@ export function Sparkline({
   const X = (i: number) => (i * width) / (data.length - 1);
   const Y = (v: number) => 2 + (1 - (v - min) / (max - min || 1)) * (height - 4);
   const up = data[data.length - 1] >= data[0];
-  const color = up ? "#2ED3B7" : "#FB2C36";
+  const color = up ? "#2ED3B7" : "#ff6467";
   let p = "";
   data.forEach((v, i) => {
     p += (i ? "L" : "M") + X(i).toFixed(1) + " " + Y(v).toFixed(1) + " ";
