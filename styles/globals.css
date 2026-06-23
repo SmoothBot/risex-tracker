@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Bai+Jamjuree:wght@500;600;700&display=swap");
+@import "tailwindcss";
+@import "./tokens.css";
+
+/* Map RISEx design tokens → Tailwind utilities (v4 @theme inline). */
+@theme inline {
+  --color-bg: var(--rx-bg);
+  --color-bg-elevated: var(--rx-bg-elevated);
+  --color-bg-sunken: var(--rx-bg-sunken);
+  --color-bg-hover: var(--rx-bg-hover);
+  --color-bg-button: var(--rx-bg-button);
+
+  --color-fg: var(--rx-fg);
+  --color-fg-strong: var(--rx-fg-strong);
+  --color-fg-muted: var(--rx-fg-muted);
+  --color-fg-faint: var(--rx-fg-faint);
+  --color-fg-on-brand: var(--rx-fg-on-brand);
+
+  --color-brand: var(--rx-brand);
+  --color-brand-hover: var(--rx-brand-hover);
+  --color-brand-soft: var(--rx-brand-soft);
+  --color-brand-soft-text: var(--rx-brand-soft-text);
+
+  --color-up: var(--rx-up);
+  --color-down: var(--rx-down);
+  --color-up-soft: var(--rx-up-soft);
+  --color-down-soft: var(--rx-down-soft);
+  --color-warning: var(--rx-warning);
+  --color-info: var(--rx-info);
+
+  --color-divider: var(--rx-divider);
+  --color-border: var(--rx-border);
+  --color-border-subtle: var(--rx-border-subtle);
+
+  --radius-xs: var(--rx-radius-xs);
+  --radius-sm: var(--rx-radius-sm);
+  --radius-md: var(--rx-radius-md);
+  --radius-lg: var(--rx-radius-lg);
+
+  --font-display: var(--rx-font-display);
+  --font-body: var(--rx-font-body);
+  --font-mono: var(--rx-font-mono);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--rx-bg);
+  color: var(--rx-fg);
+  font: var(--rx-body);
+  font-feature-settings: "ss01", "cv11", "tnum";
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #22262f;
+  border-radius: 8px;
+  border: 2px solid #0c0e12;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@keyframes rxpulse {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+/* Tabular numerals for all monospace numeric data. */
+.rx-num {
+  font-family: var(--rx-font-mono);
+  font-variant-numeric: tabular-nums;
+}

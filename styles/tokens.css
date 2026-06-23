@@ -1,0 +1,155 @@
+/* ──────────────────────────────────────────────────────────────────
+   RISEx Design System — Colors & Type tokens
+   Source of truth: RxDS Foundation 2.0 (Figma)
+   Brand: RISEx (DEX trading platform on Risechain)
+   (Ported from the design handover; font paths point at /public/fonts.)
+   (Google Fonts @import lives at the top of globals.css to satisfy CSS
+    @import-ordering rules.)
+   ────────────────────────────────────────────────────────────────── */
+
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Geist-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/Geist-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/Geist-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Geist-Bold.ttf') format('truetype');
+}
+
+:root {
+  /* ── Brand ──────────────────────────────────────────────────── */
+  --rx-brand:           #03DE82;
+  --rx-brand-hover:     #02A35E;
+  --rx-brand-soft:      rgba(3, 222, 130, 0.08);
+  --rx-brand-soft-text: #5FE9D0;
+
+  /* ── Neon brand scale (raw) ─────────────────────────────────── */
+  --rx-neon-50:  #E9FFF5;
+  --rx-neon-100: #C6FFE6;
+  --rx-neon-200: #9FFFD6;
+  --rx-neon-300: #5CF5B8;
+  --rx-neon-400: #1EEA9F;
+  --rx-neon-500: #03DE82;
+  --rx-neon-600: #02A35E;
+  --rx-neon-700: #017A47;
+  --rx-neon-800: #015C36;
+
+  /* ── Background & surface (dark, default) ───────────────────── */
+  --rx-bg:           #0C0E12;
+  --rx-bg-elevated:  #171C1F;
+  --rx-bg-sunken:    #0A0A0A;
+  --rx-bg-hover:     #22262F;
+  --rx-bg-button:    #13161B;
+
+  /* ── Foreground / text ─────────────────────────────────────── */
+  --rx-fg:           #FFFFFF;
+  --rx-fg-strong:    #F7F7F7;
+  --rx-fg-muted:     #94979C;
+  --rx-fg-faint:     #61656C;
+  --rx-fg-dim:       rgba(255, 255, 255, 0.24);
+  --rx-fg-on-brand:  #13161B;
+
+  /* ── Borders & dividers ────────────────────────────────────── */
+  --rx-divider:      #22262F;
+  --rx-border:       rgba(255, 255, 255, 0.10);
+  --rx-border-subtle:rgba(255, 255, 255, 0.04);
+
+  /* ── Semantic / market ─────────────────────────────────────── */
+  --rx-up:           #03DE82;
+  --rx-down:         #FB2C36;
+  --rx-down-soft:    rgba(251, 44, 54, 0.12);
+  --rx-up-soft:      rgba(3, 222, 130, 0.10);
+  --rx-warning:      #F0B33A;
+  --rx-info:         #2B7FFF;
+
+  /* ── Shadows / elevation ───────────────────────────────────── */
+  --rx-shadow-xs:  0 1px 2px 0 rgba(10, 13, 18, 0.05);
+  --rx-shadow-sm:  0 1px 2px 0 rgba(10, 13, 18, 0.05),
+                   0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  --rx-shadow-md:  0 4px 8px -2px rgba(0, 0, 0, 0.32),
+                   0 2px 4px -2px rgba(0, 0, 0, 0.24);
+  --rx-shadow-cta: 0 1px 2px 0 rgba(10, 13, 18, 0.05),
+                   inset 0 -2px 0 0 rgba(10, 13, 18, 0.05),
+                   inset 0 0 0 1px rgba(10, 13, 18, 0.18);
+
+  /* ── Radius scale ──────────────────────────────────────────── */
+  --rx-radius-xs:  2px;
+  --rx-radius-sm:  4px;
+  --rx-radius-md:  8px;
+  --rx-radius-lg:  12px;
+  --rx-radius-pill:9999px;
+
+  /* ── Spacing ───────────────────────────────────────────────── */
+  --rx-space-1:  2px;
+  --rx-space-2:  4px;
+  --rx-space-3:  6px;
+  --rx-space-4:  8px;
+  --rx-space-5:  12px;
+  --rx-space-6:  16px;
+  --rx-space-7:  24px;
+  --rx-space-8:  32px;
+  --rx-space-9:  48px;
+  --rx-space-10: 64px;
+  --rx-space-11: 96px;
+  --rx-space-12: 128px;
+
+  /* ── Type — families ──────────────────────────────────────── */
+  --rx-font-display: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --rx-font-body:    'Geist', 'Inter', system-ui, sans-serif;
+  --rx-font-mono:    'Geist Mono', ui-monospace, 'SFMono-Regular', 'Menlo', monospace;
+  --rx-font-wordmark:'Bai Jamjuree', 'Inter', sans-serif;
+
+  /* ── Type — semantic roles ─────────────────────────────────── */
+  --rx-display-1:   700 96px/100% var(--rx-font-display);
+  --rx-display-2:   700 72px/110% var(--rx-font-display);
+  --rx-display-3:   700 60px/110% var(--rx-font-display);
+
+  --rx-h1:          700 48px/110% var(--rx-font-display);
+  --rx-h2:          700 32px/110% var(--rx-font-display);
+  --rx-h3:          700 24px/130% var(--rx-font-display);
+  --rx-h4:          700 20px/130% var(--rx-font-display);
+  --rx-h5:          600 16px/140% var(--rx-font-body);
+  --rx-h6:          600 14px/140% var(--rx-font-body);
+
+  --rx-title:       500 16px/150% var(--rx-font-body);
+  --rx-body-lg:     400 16px/150% var(--rx-font-body);
+  --rx-body:        400 14px/150% var(--rx-font-body);
+  --rx-body-sm:     400 12px/150% var(--rx-font-body);
+  --rx-caption:     400 11px/16px  var(--rx-font-body);
+  --rx-caption-sm:  400 10px/14px  var(--rx-font-body);
+
+  --rx-button-lg:   700 14px/20px var(--rx-font-body);
+  --rx-button:      700 12px/18px var(--rx-font-body);
+  --rx-button-sm:   700 11px/16px var(--rx-font-body);
+
+  --rx-mono-lg:     400 13px/18px var(--rx-font-mono);
+  --rx-mono:        400 11px/16px var(--rx-font-mono);
+  --rx-label:       500 11px/16px var(--rx-font-body);
+
+  /* ── Motion ────────────────────────────────────────────────── */
+  --rx-ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --rx-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --rx-dur-fast:    120ms;
+  --rx-dur-base:    200ms;
+  --rx-dur-slow:    320ms;
+}

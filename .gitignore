@@ -1,0 +1,18 @@
+# deps
+/node_modules
+# next
+/.next
+/out
+# env
+.env*.local
+.env
+# misc
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+# test artifacts
+/test-results
+/playwright-report
+/.playwright
+/.playwright-mcp
+.vercel
