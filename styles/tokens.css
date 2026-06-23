@@ -75,10 +75,10 @@
   --rx-border-subtle:rgba(255, 255, 255, 0.04);
 
   /* ── Semantic / market ─────────────────────────────────────── */
-  --rx-up:           #03DE82;
+  --rx-up:           #2ED3B7;
   --rx-down:         #FB2C36;
   --rx-down-soft:    rgba(251, 44, 54, 0.12);
-  --rx-up-soft:      rgba(3, 222, 130, 0.10);
+  --rx-up-soft:      rgba(46, 211, 183, 0.12);
   --rx-warning:      #F0B33A;
   --rx-info:         #2B7FFF;
 

@@ -56,7 +56,7 @@ export function LiquidationMap({
       {rows.map((r, i) => {
         const y = 10 + i * rowH;
         const bw = (r.amt / maxA) * (w - cx - 90);
-        const c = r.isShort ? "#03DE82" : "#FB2C36";
+        const c = r.isShort ? "#2ED3B7" : "#FB2C36";
         return (
           <g key={i}>
             <text
@@ -116,7 +116,7 @@ export function LiquidationMap({
       <text
         x={cx + 6}
         y={16}
-        fill="#03DE82"
+        fill="#2ED3B7"
         fontSize={9.5}
         fontWeight={600}
         fontFamily="var(--rx-font-body)"

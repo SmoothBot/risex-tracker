@@ -33,7 +33,7 @@ export function HeatmapScreen() {
                 className="h-[8px] w-[120px] rounded-[4px]"
                 style={{
                   background:
-                    "linear-gradient(90deg,#FB2C36,#3a2125,#22262F,#16332a,#03DE82)",
+                    "linear-gradient(90deg,#FB2C36,#3a2125,#22262F,#143b35,#2ED3B7)",
                 }}
               />
               <span className="text-[11px] text-fg-muted">Long</span>

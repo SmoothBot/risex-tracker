@@ -5,7 +5,7 @@ import { baseCoin } from "@/lib/format";
 function cell(b: number): string {
   const a = Math.min(1, Math.abs(b));
   return b >= 0
-    ? `rgba(3,222,130,${(0.06 + a * 0.82).toFixed(2)})`
+    ? `rgba(46,211,183,${(0.06 + a * 0.82).toFixed(2)})`
     : `rgba(251,44,54,${(0.06 + a * 0.82).toFixed(2)})`;
 }
 

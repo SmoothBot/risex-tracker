@@ -38,13 +38,13 @@ export function LiveValue({
         transition: "background-color 250ms ease",
         backgroundColor:
           flash === "up"
-            ? "rgba(3,222,130,0.16)"
+            ? "rgba(46,211,183,0.16)"
             : flash === "down"
               ? "rgba(251,44,54,0.16)"
               : "transparent",
         boxShadow:
           flash === "up"
-            ? "0 0 0 3px rgba(3,222,130,0.16)"
+            ? "0 0 0 3px rgba(46,211,183,0.16)"
             : flash === "down"
               ? "0 0 0 3px rgba(251,44,54,0.16)"
               : "none",
